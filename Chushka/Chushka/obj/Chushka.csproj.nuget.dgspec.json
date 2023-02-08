@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ivailo 12a\\Chushka\\Chushka\\Chushka.csproj": {}
+    "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\Chushka.csproj": {}
   },
   "projects": {
-    "D:\\ivailo 12a\\Chushka\\Chushka\\Chushka.csproj": {
+    "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\Chushka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ivailo 12a\\Chushka\\Chushka\\Chushka.csproj",
+        "projectUniqueName": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\Chushka.csproj",
         "projectName": "Chushka",
-        "projectPath": "D:\\ivailo 12a\\Chushka\\Chushka\\Chushka.csproj",
+        "projectPath": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\Chushka.csproj",
         "packagesPath": "C:\\Users\\Teacher\\.nuget\\packages\\",
-        "outputPath": "D:\\ivailo 12a\\Chushka\\Chushka\\obj\\",
+        "outputPath": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
