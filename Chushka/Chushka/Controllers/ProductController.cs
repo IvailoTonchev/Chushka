@@ -8,8 +8,8 @@ namespace Chushka.Controllers
 {
     public class ProductController : Controller
     {
-       
-            private readonly ApplicationDbContext db;
+
+        private readonly ApplicationDbContext db;
 
         public ProductController(ApplicationDbContext db)
         {
@@ -20,9 +20,24 @@ namespace Chushka.Controllers
 
             return View();
         }
+        [HttpGet]
         public IActionResult Add()
         {
             return this.View();
+        }
+        [HttpPost]
+        public IActionResult Add(InputProductModel input)
+        {
+            var prdouct = new Product 
+            {
+            Name = input.Name,
+            Price = input.Price,
+            Description = input.Description,
+            Type= (Product.Type_)input.ProductType,
+            };
+            db.Products.Add(prdouct);
+            db.SaveChanges();
+            return Redirect("/");
         }
 
     }
