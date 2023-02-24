@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uWoBmePs1+KlgH/XuWnpQ7yRqr1gJDXSyfzW4XlzR+M=",
+  "Hash": "2nT0NOGRKCIBsru7/c7KpwBikMrLX2c0RjUTssT69KE=",
   "Source": "Chushka",
   "BasePath": "_content/Chushka",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Chushka.bundle.scp.css"
     },
     {
+      "Identity": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\css\\reset-css.css",
+      "SourceId": "Chushka",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\",
+      "BasePath": "_content/Chushka",
+      "RelativePath": "css/reset-css.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\reset-css.css"
+    },
+    {
       "Identity": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\css\\site.css",
       "SourceId": "Chushka",
       "SourceType": "Discovered",
@@ -1086,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\css\\style.css",
+      "SourceId": "Chushka",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\",
+      "BasePath": "_content/Chushka",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "D:\\ivailo 12a\\chushka1\\Chushka\\Chushka\\Chushka\\wwwroot\\favicon.ico",

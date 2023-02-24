@@ -17,36 +17,13 @@ namespace Chushka.Controllers
         }
         public IActionResult Index()
         {
-            var products = db.Products.Select(x => new InputProductModel
-            {
-                Id = x.Id,
-                Name = x.Name,
-                Price = x.Price,
-                Description = x.Description,
-                Type= (InputProductModel.Type_)x.Type,
-            }).ToList();
 
-            return View(products);
+            return View();
         }
-        [HttpGet]
-        public IActionResult Create()
+        public IActionResult Add()
         {
             return this.View();
         }
-        [HttpPost]
-        public IActionResult Create(InputProductModel model)
-        {
-            var product = new Product { Name = model.Name,
-            Id=model.Id,
-            Description=model.Description,
-            Price = model.Price,
-            Type= (Product.Type_)model.Type,
-            Orders=model.Orders
-            };
-            db.Products.Add(product);
-            db.SaveChanges();
 
-            return this.Redirect("Index");
-        }
     }
 }
