@@ -6,7 +6,8 @@ namespace Chushka.Data.Models
     {
         public Client()
         {
-                this.Orders = new HashSet<Order>();
+            this.Id=Guid.NewGuid().ToString();
+            this.Orders = new HashSet<Order>();
         }
         public string FullName { get; set; }
         public virtual ICollection<Order>Orders { get; set; }

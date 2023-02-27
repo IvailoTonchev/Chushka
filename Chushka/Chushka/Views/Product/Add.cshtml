@@ -4,15 +4,15 @@
     <hr class="hr-2 bg-dark" />
     <form class="mx-auto half-width" method="post" >
         <div class="form-group">
-            <label for="name">Name</label>
+            <label asp-for="Name">Name</label>
             <input type="text" class="form-control" placeholder="Name..." asp-for="Name">
         </div>
         <div class="form-group">
-            <label for="price">Price</label>
+            <label asp-for="Price">Price</label>
             <input type="number" class="form-control" placeholder="Price..." asp-for="Price">
         </div>
         <div class="form-group">
-            <label for="description">Description</label>
+            <label asp-for="Description">Description</label>
             <textarea class="form-control"  rows="4" placeholder="Description..." asp-for="Description"></textarea>
         </div>
         <h4 class="text-center">Product Type</h4>
