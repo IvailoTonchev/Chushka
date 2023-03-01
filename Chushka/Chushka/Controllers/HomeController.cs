@@ -17,6 +17,18 @@ namespace Chushka.Controllers
         {
             return View();
         }
+        public IActionResult guesthome()
+        {
+            return View();
+        }
+         public IActionResult userhome()
+        {
+            return View();
+        }
+        public IActionResult adminhome()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

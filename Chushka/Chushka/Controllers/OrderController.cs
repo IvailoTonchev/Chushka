@@ -15,37 +15,11 @@ namespace Chushka.Controllers
         }
         public IActionResult Index()
         {
-            var orders = db.Orders.Select(x => new InputOrderModel
-            {
-                Id = x.Id,
-              Client=x.Client,
-              ClientId=x.ClientId,
-              OrderedOn=x.OrderedOn,
-              Product=x.Product,
-            }).ToList();
-
-            return View(orders);
+         return View();
         }
-        [HttpGet]
-        public IActionResult Add()
+        public IActionResult All()
         {
-            return this.View();
+            return View();
         }
-        [HttpPost]
-        public IActionResult Add(InputOrderModel model)
-        {
-            var order = new Order { Id = model.Id,
-            Client=model.Client,
-            ClientId = model.ClientId,
-            OrderedOn= model.OrderedOn,
-            Product=model.Product,
-            
-            };
-            db.Orders.Add(order);
-            db.SaveChanges();
-
-            return this.Redirect("Index");
-        }
-
     }
 }

@@ -43,8 +43,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Home/guest-home.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxndWVzdC1ob21lLmNzaHRtbA==
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Home/adminhome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZG1pbmhvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Home/guesthome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxndWVzdGhvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Home/Index.cshtml]
@@ -55,12 +59,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Home/userhome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1c2VyaG9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Order/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Product/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Product/Detailsadmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzYWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ivailo 12a/chushka1/Chushka/Chushka/Chushka/Views/Product/Index.cshtml]

@@ -20,6 +20,21 @@ namespace Chushka.Controllers
 
             return View();
         }
+        public IActionResult Delete()
+        {
+
+            return View();
+        }
+        public IActionResult Details()
+        {
+
+            return View();
+        }
+        public IActionResult Detailsadmin()
+        {
+
+            return View();
+        }
         [HttpGet]
         public IActionResult Add()
         {
