@@ -25,10 +25,7 @@ namespace Chushka.Controllers
         {
             return View();
         }
-        public IActionResult adminhome()
-        {
-            return View();
-        }
+        
 
         public IActionResult Privacy()
         {
