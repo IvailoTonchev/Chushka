@@ -1,0 +1,28 @@
+﻿@model ICollection<Chushka.Models.ProductViewModel>
+<link rel="stylesheet" type="text/css" href="~/cssyordanova/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="~/cssyordanova/reset-css.css">
+<link rel="stylesheet" type="text/css" href="~/cssyordanova/style.css">
+
+<main class="mt-3 mb-5">
+    <div class="container-fluid text-center">
+        <h2>Greetings, admin!</h2>
+        <h4>Enjoy your work today!</h4>
+    </div>
+    <hr class="hr-2 bg-dark" />
+    <div class="container-fluid product-holder">
+        <div class="row d-flex justify-content-around">
+            @foreach (var item in Model)
+            {               
+            <div class="product col-md-2 chushka-bg-color rounded-top rounded-bottom">
+                <h5 class="text-center mt-3">@item.Name</h5>
+                <hr class="hr-1 bg-white" />
+                <p class="text-white text-center">
+                    @item.Description
+                </p>
+                <hr class="hr-1 bg-white" />
+                <h6 class="text-center text-white mb-3">@item.Price</h6>
+            </div>
+            }                
+        </div>
+    </div>
+</main>
