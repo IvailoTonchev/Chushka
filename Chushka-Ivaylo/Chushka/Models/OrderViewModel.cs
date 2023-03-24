@@ -5,8 +5,10 @@ namespace Chushka.Models
     public class OrderViewModel
     {
         public int Id { get; set; }
-        public ICollection<ProductOrder> Product { get; set; }
+        public string ClientName { get; set; }
+        public string ProductName { get; set; }
         public bool OrderedOn { get; set; }
-        public int ClientId{ get; set;}
+        public string ClientId{ get; set;}
+        public int ProductId{ get; set;}
         }
 }

@@ -2,6 +2,7 @@
 using Chushka.Data;
 using Chushka.Data.Models;
 using Chushka.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chushka.Controllers
@@ -10,10 +11,12 @@ namespace Chushka.Controllers
     {
 
         private readonly ApplicationDbContext db;
+        private readonly UserManager<Client> userManager;
 
-        public ProductController(ApplicationDbContext db)
+        public ProductController(ApplicationDbContext db, UserManager<Client> userManager)
         {
             this.db = db;
+            this.userManager = userManager;              
         }
         public IActionResult Index()
         {
@@ -25,13 +28,15 @@ namespace Chushka.Controllers
 
             return View();
         }
-        public IActionResult Details(int Id)
+        public async Task <IActionResult>  Details(int Id)
         {
+            var client = await userManager.GetUserAsync(this.User);
             var model = db.Products.Where(x=>x.Id==Id).Select(x => new ProductViewModel
             {
                 Name = x.Name,
                 Description = x.Description,
                 Id = x.Id,
+                ClientId=client.Id,
                 Price = x.Price,
 
             }).FirstOrDefault();

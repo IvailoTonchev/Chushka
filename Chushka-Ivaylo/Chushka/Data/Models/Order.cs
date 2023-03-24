@@ -11,5 +11,6 @@
         public bool OrderedOn { get; set; }
         public int ClientId { get; set; }
         public virtual Client Client { get; set; }
+
     }
 }

@@ -10,9 +10,9 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading;
 using System.Threading.Tasks;
+using Chushka.Data.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Chushka.Data.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -80,7 +80,6 @@ namespace Chushka.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
             public string FullName { get; set; }
-
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -114,20 +113,18 @@ namespace Chushka.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new Client
-                {
-                    UserName = Input.Email,
-                    Email = Input.Email,
-                    FullName = Input.FullName
-                };
-                var result = await _userManager.CreateAsync(user, Input.Password);
+                var user = CreateUser();
+                user.FullName = Input.FullName;
+                await _userStore.SetUserNameAsync((Client)user, Input.Email, CancellationToken.None);
+                await _emailStore.SetEmailAsync((Client)user, Input.Email, CancellationToken.None);
+                var result = await _userManager.CreateAsync((Client)user, Input.Password);
 
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
 
-                    var userId = await _userManager.GetUserIdAsync(user);
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var userId = await _userManager.GetUserIdAsync((Client)user);
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync((Client)user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",
@@ -144,7 +141,7 @@ namespace Chushka.Areas.Identity.Pages.Account
                     }
                     else
                     {
-                        await _signInManager.SignInAsync(user, isPersistent: false);
+                        await _signInManager.SignInAsync((Client)user, isPersistent: false);
                         return LocalRedirect(returnUrl);
                     }
                 }
